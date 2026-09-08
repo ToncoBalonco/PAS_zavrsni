@@ -15,9 +15,9 @@ U oba launch fajla postoje **apsolutni putevi vezani za konkretnog korisnika/ra�
 provjeri ih i po potrebi promijeni prije pokretanja:
 
 - `sim_gazebo.launch.py` učitava svijet sa fiksne putanje:
-  `/home/tona/astro_ws_pas/worlds/test_crta.world`
+
 - `astar_pf_pp.launch.py` učitava kartu sa fiksne putanje:
-  `/home/tona/astro_ws_pas/src/ASTRO/astro_slam/maps/mapa_crte_new.yaml`
+
 
 Ako radiš na drugom računalu/pod drugim korisničkim imenom, ova dva reda moraš prilagoditi,
 inače će launch pući na "file not found".
@@ -31,10 +31,12 @@ radi mapiranje.
 ## Tipičan tok rada (sažetak)
 
 ```bash
-# Terminal 1
+# simulacija
+source sim_env.bash
 ros2 launch astro sim_gazebo.launch.py
 
-# pričekaj da se robot spawna (~10-15s), zatim Terminal 2
+#realni
+source real_env.bash
 ros2 launch astro astar_pf_pp.launch.py
 
 # u RViz-u: "2D Goal Pose" -> klik na karti -> robot planira i vozi do cilja
