@@ -1,0 +1,636 @@
+[0.131s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.131s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f60c215afe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f60c215a620>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f60c215a620>>, mixin_verb=('build',))
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.285s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tona/astro_ws_pas'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-18_33_37) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'ros'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extensions ['cmake', 'python']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'cmake'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'python'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extensions ['python_setup_py']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(bags/rosbag2_2026_08_30-20_33_37_opt) by extension 'python_setup_py'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(optimizer_output) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_19-15_45_34) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'ros'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_20-17_45_23) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'ros'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag2_2026_08_21-17_43_13) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'ros'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extensions ['cmake', 'python']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'cmake'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'python'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extensions ['python_setup_py']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO) by extension 'python_setup_py'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro) by extension 'ros'
+[0.311s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ASTRO/astro' with type 'ros.ament_cmake' and name 'astro'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_navigation) by extension 'ros'
+[0.312s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ASTRO/astro_navigation' with type 'ros.ament_cmake' and name 'astro_navigation'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_serial_cpp) by extension 'ros'
+[0.312s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ASTRO/astro_serial_cpp' with type 'ros.ament_cmake' and name 'astro_serial_cpp'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/astro_slam) by extension 'ros'
+[0.313s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ASTRO/astro_slam' with type 'ros.ament_python' and name 'astro_slam'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/build) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/build) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/build) ignored
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/install) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/install) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/install) ignored
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/log) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/log) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/ASTRO/log) ignored
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/map) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/models/mesh) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/01 CRTA_detailed/crta_namjesteno/worlds) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/map) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(worlds/02 CRTA_simplified/crta_pojednostavljeno/worlds) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.369s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/tona/astro_ws/install
+[0.369s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/tona/astro_ws_pas/install
+[0.370s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 389 installed packages in /opt/ros/humble
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'cmake_target' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'catkin_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] DEBUG:colcon.colcon_core.verb:Building package 'astro' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tona/astro_ws_pas/build/astro', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tona/astro_ws_pas/install/astro', 'merge_install': False, 'path': '/home/tona/astro_ws_pas/src/ASTRO/astro', 'symlink_install': False, 'test_result_base': None}
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'cmake_target' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] DEBUG:colcon.colcon_core.verb:Building package 'astro_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tona/astro_ws_pas/build/astro_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tona/astro_ws_pas/install/astro_navigation', 'merge_install': False, 'path': '/home/tona/astro_ws_pas/src/ASTRO/astro_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'cmake_target' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_serial_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] DEBUG:colcon.colcon_core.verb:Building package 'astro_serial_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tona/astro_ws_pas/build/astro_serial_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tona/astro_ws_pas/install/astro_serial_cpp', 'merge_install': False, 'path': '/home/tona/astro_ws_pas/src/ASTRO/astro_serial_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'cmake_target' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'astro_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] DEBUG:colcon.colcon_core.verb:Building package 'astro_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tona/astro_ws_pas/build/astro_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tona/astro_ws_pas/install/astro_slam', 'merge_install': False, 'path': '/home/tona/astro_ws_pas/src/ASTRO/astro_slam', 'symlink_install': False, 'test_result_base': None}
+[0.423s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.424s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.424s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tona/astro_ws_pas/src/ASTRO/astro' with build type 'ament_cmake'
+[0.424s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tona/astro_ws_pas/src/ASTRO/astro'
+[0.430s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.433s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tona/astro_ws_pas/src/ASTRO/astro_navigation' with build type 'ament_cmake'
+[0.433s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tona/astro_ws_pas/src/ASTRO/astro_navigation'
+[0.434s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.434s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.436s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tona/astro_ws_pas/src/ASTRO/astro_serial_cpp' with build type 'ament_cmake'
+[0.436s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tona/astro_ws_pas/src/ASTRO/astro_serial_cpp'
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.444s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tona/astro_ws_pas/src/ASTRO/astro_slam' with build type 'ament_python'
+[0.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro_slam', 'ament_prefix_path')
+[0.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/hook/ament_prefix_path.ps1'
+[0.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/hook/ament_prefix_path.dsv'
+[0.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/hook/ament_prefix_path.sh'
+[0.446s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.446s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tona/astro_ws_pas/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro -- -j24 -l24
+[0.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tona/astro_ws_pas/build/astro_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro_navigation -- -j24 -l24
+[0.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tona/astro_ws_pas/build/astro_serial_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro_serial_cpp -- -j24 -l24
+[0.853s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tona/astro_ws_pas/src/ASTRO/astro_slam'
+[0.853s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.853s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tona/astro_ws_pas/build/astro_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro_navigation -- -j24 -l24
+[0.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tona/astro_ws_pas/build/astro_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro_navigation
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tona/astro_ws_pas/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro -- -j24 -l24
+[0.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tona/astro_ws_pas/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro
+[0.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tona/astro_ws_pas/build/astro_serial_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro_serial_cpp -- -j24 -l24
+[0.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tona/astro_ws_pas/build/astro_serial_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro_serial_cpp
+[0.935s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astro_navigation)
+[0.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tona/astro_ws_pas/build/astro_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro_navigation
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation' for CMake module files
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation' for CMake config files
+[0.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro_navigation', 'cmake_prefix_path')
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/hook/cmake_prefix_path.ps1'
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/hook/cmake_prefix_path.dsv'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/hook/cmake_prefix_path.sh'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/bin'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/lib/pkgconfig/astro_navigation.pc'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/lib/python3.10/site-packages'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/bin'
+[0.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.ps1'
+[0.942s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.dsv'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.sh'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.bash'
+[0.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.zsh'
+[0.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tona/astro_ws_pas/install/astro_navigation/share/colcon-core/packages/astro_navigation)
+[0.944s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astro_navigation)
+[0.945s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation' for CMake module files
+[0.945s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation' for CMake config files
+[0.950s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro_navigation', 'cmake_prefix_path')
+[0.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/hook/cmake_prefix_path.ps1'
+[0.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/hook/cmake_prefix_path.dsv'
+[0.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/hook/cmake_prefix_path.sh'
+[0.952s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/bin'
+[0.952s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/lib/pkgconfig/astro_navigation.pc'
+[0.952s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/lib/python3.10/site-packages'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_navigation/bin'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.ps1'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.dsv'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.sh'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.bash'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.zsh'
+[0.955s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tona/astro_ws_pas/install/astro_navigation/share/colcon-core/packages/astro_navigation)
+[0.957s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astro)
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro' for CMake module files
+[0.963s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro' for CMake config files
+[0.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro', 'cmake_prefix_path')
+[0.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tona/astro_ws_pas/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro/share/astro/hook/cmake_prefix_path.ps1'
+[0.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro/share/astro/hook/cmake_prefix_path.dsv'
+[0.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro/share/astro/hook/cmake_prefix_path.sh'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/lib'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/bin'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/lib/pkgconfig/astro.pc'
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/lib/python3.10/site-packages'
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/bin'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.ps1'
+[0.972s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tona/astro_ws_pas/install/astro/share/astro/package.dsv'
+[0.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.sh'
+[0.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.bash'
+[0.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.zsh'
+[0.974s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tona/astro_ws_pas/install/astro/share/colcon-core/packages/astro)
+[0.974s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astro)
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro' for CMake module files
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro' for CMake config files
+[0.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro', 'cmake_prefix_path')
+[0.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro/share/astro/hook/cmake_prefix_path.ps1'
+[0.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro/share/astro/hook/cmake_prefix_path.dsv'
+[0.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro/share/astro/hook/cmake_prefix_path.sh'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/lib'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/bin'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/lib/pkgconfig/astro.pc'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/lib/python3.10/site-packages'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro/bin'
+[0.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.ps1'
+[0.984s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tona/astro_ws_pas/install/astro/share/astro/package.dsv'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.sh'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.bash'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro/share/astro/package.zsh'
+[0.986s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tona/astro_ws_pas/install/astro/share/colcon-core/packages/astro)
+[0.986s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astro_serial_cpp)
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp' for CMake module files
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp' for CMake config files
+[0.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro_serial_cpp', 'cmake_prefix_path')
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/hook/cmake_prefix_path.ps1'
+[0.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tona/astro_ws_pas/build/astro_serial_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro_serial_cpp
+[0.994s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/hook/cmake_prefix_path.dsv'
+[0.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/hook/cmake_prefix_path.sh'
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/lib'
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/bin'
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/lib/pkgconfig/astro_serial_cpp.pc'
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/lib/python3.10/site-packages'
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/bin'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.ps1'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.dsv'
+[1.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.sh'
+[1.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.bash'
+[1.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.zsh'
+[1.006s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tona/astro_ws_pas/install/astro_serial_cpp/share/colcon-core/packages/astro_serial_cpp)
+[1.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astro_serial_cpp)
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp' for CMake module files
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp' for CMake config files
+[1.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro_serial_cpp', 'cmake_prefix_path')
+[1.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/hook/cmake_prefix_path.ps1'
+[1.013s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/hook/cmake_prefix_path.dsv'
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/hook/cmake_prefix_path.sh'
+[1.014s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/lib'
+[1.014s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/bin'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/lib/pkgconfig/astro_serial_cpp.pc'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/lib/python3.10/site-packages'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_serial_cpp/bin'
+[1.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.ps1'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.dsv'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.sh'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.bash'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_serial_cpp/share/astro_serial_cpp/package.zsh'
+[1.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tona/astro_ws_pas/install/astro_serial_cpp/share/colcon-core/packages/astro_serial_cpp)
+[1.311s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: extract_messages, alias, dist_info, egg_info, check, clean, test, upload_docs, upload, build_ext, symlink_data, sdist, init_catalog, update_catalog, develop, bdist_dumb, bdist_egg, rotate, bdist, install_headers, install_lib, install, bdist_rpm, easy_install, register, setopt, build, build_scripts, install_data, install_egg_info, compile_catalog, build_py, saveopts, build_clib, install_scripts, bdist_wheel
+[1.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/astro_slam': PYTHONPATH=/home/tona/astro_ws_pas/build/astro_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/astro_slam build --build-base /home/tona/astro_ws_pas/build/astro_slam/build install --record /home/tona/astro_ws_pas/build/astro_slam/install.log --install-scripts $base/lib/astro_slam --single-version-externally-managed install_data
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_slam' for CMake module files
+[1.567s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/astro_slam' returned '0': PYTHONPATH=/home/tona/astro_ws_pas/build/astro_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/astro_slam build --build-base /home/tona/astro_ws_pas/build/astro_slam/build install --record /home/tona/astro_ws_pas/build/astro_slam/install.log --install-scripts $base/lib/astro_slam --single-version-externally-managed install_data
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_slam' for CMake config files
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_slam/lib'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_slam/bin'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_slam/lib/pkgconfig/astro_slam.pc'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages'
+[1.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('astro_slam', 'pythonpath')
+[1.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/hook/pythonpath.ps1'
+[1.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/hook/pythonpath.dsv'
+[1.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/hook/pythonpath.sh'
+[1.569s] Level 1:colcon.colcon_core.environment:checking '/home/tona/astro_ws_pas/install/astro_slam/bin'
+[1.569s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astro_slam)
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/package.ps1'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/package.dsv'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/package.sh'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/package.bash'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/package.zsh'
+[1.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tona/astro_ws_pas/install/astro_slam/share/colcon-core/packages/astro_slam)
+[1.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.571s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.574s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.574s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.574s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.582s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.582s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tona/astro_ws_pas/install/local_setup.ps1'
+[1.583s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tona/astro_ws_pas/install/_local_setup_util_ps1.py'
+[1.584s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tona/astro_ws_pas/install/setup.ps1'
+[1.584s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tona/astro_ws_pas/install/local_setup.sh'
+[1.584s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tona/astro_ws_pas/install/_local_setup_util_sh.py'
+[1.585s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tona/astro_ws_pas/install/setup.sh'
+[1.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tona/astro_ws_pas/install/local_setup.bash'
+[1.585s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tona/astro_ws_pas/install/setup.bash'
+[1.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tona/astro_ws_pas/install/local_setup.zsh'
+[1.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tona/astro_ws_pas/install/setup.zsh'

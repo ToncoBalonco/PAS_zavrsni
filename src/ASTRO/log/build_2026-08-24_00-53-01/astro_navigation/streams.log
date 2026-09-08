@@ -1,0 +1,59 @@
+[0.010s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro_navigation -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.079s] -- The CXX compiler identification is GNU 11.4.0
+[0.084s] -- Detecting C compiler ABI info
+[0.128s] -- Detecting C compiler ABI info - done
+[0.133s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.133s] -- Detecting C compile features
+[0.133s] -- Detecting C compile features - done
+[0.135s] -- Detecting CXX compiler ABI info
+[0.191s] -- Detecting CXX compiler ABI info - done
+[0.196s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.196s] -- Detecting CXX compile features
+[0.196s] -- Detecting CXX compile features - done
+[0.200s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.297s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.363s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.409s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.409s] -- Added test 'lint_cmake' to check CMake code style
+[0.409s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.410s] -- Added test 'xmllint' to check XML markup files
+[0.411s] -- Configuring done
+[0.412s] -- Generating done
+[0.413s] -- Build files have been written to: /home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation
+[0.416s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro_navigation -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation
+[0.417s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation -- -j24 -l24
+[0.448s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation -- -j24 -l24
+[0.448s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation
+[0.452s] -- Install configuration: ""
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/launch
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/launch/astro_stage_navigation.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/launch/navigation.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/launch/localization.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/launch/slam_toolbox_online_async.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/config
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/config/astro_stage_navigation.yaml
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/config/mapper_params_online_async.yaml
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/config/nav2_params.yaml
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/rviz
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/rviz/nav2_default_view.rviz
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/rviz/astro_online_async_rviz_config.rviz
+[0.455s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/map
+[0.455s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/map/mapa_dva.yaml
+[0.455s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/map/mapa_dva.pgm
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/ament_index/resource_index/package_run_dependencies/astro_navigation
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/ament_index/resource_index/parent_prefix_path/astro_navigation
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/environment/ament_prefix_path.sh
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/environment/ament_prefix_path.dsv
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/environment/path.sh
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/environment/path.dsv
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/local_setup.bash
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/local_setup.sh
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/local_setup.zsh
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/local_setup.dsv
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/package.dsv
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/ament_index/resource_index/packages/astro_navigation
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/cmake/astro_navigationConfig.cmake
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/cmake/astro_navigationConfig-version.cmake
+[0.457s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_navigation/share/astro_navigation/package.xml
+[0.458s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/src/ASTRO/build/astro_navigation

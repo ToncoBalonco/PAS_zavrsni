@@ -1,0 +1,254 @@
+<sdf version="1.9">
+
+  <world name="default">
+
+    <!-- ========================================================= -->
+    <!-- GAZEBO SIM SYSTEMS - FORTRESS                             -->
+    <!-- ========================================================= -->
+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics"/>
+
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands"/>
+
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster"/>
+
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+
+
+      <render_engine>ogre2</render_engine>
+
+    </plugin>
+
+    <plugin
+      filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu"/>
+
+
+    <!-- ========================================================= -->
+    <!-- PHYSICS                                                   -->
+    <!-- ========================================================= -->
+
+    <gravity>0 0 -9.8</gravity>
+
+    <magnetic_field>
+      6.0e-06 2.3e-05 -4.2e-05
+    </magnetic_field>
+
+    <physics
+      name="1ms"
+      type="ode">
+
+      <max_step_size>0.001</max_step_size>
+
+      <real_time_factor>1.0</real_time_factor>
+
+      <real_time_update_rate>1000</real_time_update_rate>
+
+    </physics>
+
+
+    <!-- ========================================================= -->
+    <!-- SCENE                                                     -->
+    <!-- ========================================================= -->
+
+    <scene>
+
+      <ambient>0.4 0.4 0.4 1</ambient>
+
+      <background>0.7 0.7 0.7 1</background>
+
+      <shadows>false</shadows>
+
+    </scene>
+
+
+
+    <!-- ========================================================= -->
+    <!-- CRTA V4                                                  -->
+    <!-- ========================================================= -->
+
+    <model name="CRTA_v4">
+
+      <static>true</static>
+
+      <pose>-15 -6 0 0 0 0</pose>
+
+      <self_collide>false</self_collide>
+
+      <allow_auto_disable>true</allow_auto_disable>
+
+
+      <link name="link_0">
+
+        <!-- ----------------------------------------------------- -->
+        <!-- Inertial                                              -->
+        <!-- ----------------------------------------------------- -->
+
+        <inertial>
+
+          <mass>1.0</mass>
+
+          <inertia>
+
+            <ixx>0.166667</ixx>
+
+            <ixy>0.0</ixy>
+
+            <ixz>0.0</ixz>
+
+            <iyy>0.166667</iyy>
+
+            <iyz>0.0</iyz>
+
+            <izz>0.166667</izz>
+
+          </inertia>
+
+        </inertial>
+
+
+        <!-- ===================================================== -->
+        <!-- CRTA VISUAL                                          -->
+        <!-- ===================================================== -->
+
+        <visual name="crta_visual">
+
+          <pose>0 0 0 0 0 0</pose>
+
+          <geometry>
+
+            <mesh>
+
+              <uri>
+                file:///home/tona/astro_ws_pas/worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh/CRTA_mesh.dae
+              </uri>
+
+              <scale>1 1 1</scale>
+
+            </mesh>
+
+          </geometry>
+
+          <cast_shadows>true</cast_shadows>
+
+          <transparency>0</transparency>
+
+        </visual>
+
+
+        <!-- ===================================================== -->
+        <!-- CRTA COLLISION                                       -->
+        <!-- ===================================================== -->
+
+        <collision name="crta_collision">
+
+          <pose>0 0 0 0 0 0</pose>
+
+          <geometry>
+
+            <mesh>
+
+              <uri>
+                file:///home/tona/astro_ws_pas/worlds/02 CRTA_simplified/crta_pojednostavljeno/CRTA_v4/mesh/CRTA_mesh.dae
+              </uri>
+
+              <scale>1 1 1</scale>
+
+            </mesh>
+
+          </geometry>
+
+          <surface>
+
+            <friction>
+
+              <ode>
+
+                <mu>1.0</mu>
+
+                <mu2>1.0</mu2>
+
+                <slip1>0.0</slip1>
+
+                <slip2>0.0</slip2>
+
+              </ode>
+
+            </friction>
+
+            <bounce>
+
+              <restitution_coefficient>0.0</restitution_coefficient>
+
+              <threshold>1000000</threshold>
+
+            </bounce>
+
+            <contact>
+
+              <collide_without_contact>false</collide_without_contact>
+
+              <collide_bitmask>1</collide_bitmask>
+
+              <ode>
+
+                <soft_cfm>0.0</soft_cfm>
+
+                <soft_erp>0.2</soft_erp>
+
+                <kp>1000000</kp>
+
+                <kd>100</kd>
+
+                <max_vel>0.1</max_vel>
+
+                <min_depth>0.001</min_depth>
+
+              </ode>
+
+            </contact>
+
+          </surface>
+
+        </collision>
+
+
+        <self_collide>false</self_collide>
+
+        <enable_wind>false</enable_wind>
+
+        <kinematic>false</kinematic>
+
+      </link>
+
+    </model>
+
+    <light
+      name="sun"
+      type="directional">
+
+      <pose>0 0 10 0 0 0</pose>
+
+      <cast_shadows>false</cast_shadows>
+
+      <intensity>1.0</intensity>
+
+      <direction>-0.5 0.1 -0.9</direction>
+
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+
+      <specular>0.2 0.2 0.2 1</specular>
+
+    </light>
+
+  </world>
+
+</sdf>

@@ -1,0 +1,8 @@
+source;share/astro/hook/cmake_prefix_path.ps1
+source;share/astro/hook/cmake_prefix_path.dsv
+source;share/astro/hook/cmake_prefix_path.sh
+source;share/astro/local_setup.bash
+source;share/astro/local_setup.dsv
+source;share/astro/local_setup.ps1
+source;share/astro/local_setup.sh
+source;share/astro/local_setup.zsh

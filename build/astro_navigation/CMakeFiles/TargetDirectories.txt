@@ -1,0 +1,9 @@
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/uninstall.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/astro_navigation_uninstall.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/test.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/edit_cache.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/rebuild_cache.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/list_install_components.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/install.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/install/local.dir
+/home/tona/astro_ws_pas/build/astro_navigation/CMakeFiles/install/strip.dir

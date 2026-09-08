@@ -1,0 +1,26 @@
+[0.447s] Invoking command in '/home/tona/astro_ws_pas/build/astro_slam': PYTHONPATH=/home/tona/astro_ws_pas/build/astro_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tona/astro_ws_pas/build/astro_slam/build --no-deps symlink_data --force
+[0.562s] running develop
+[0.620s] running egg_info
+[0.620s] writing astro_slam.egg-info/PKG-INFO
+[0.620s] writing dependency_links to astro_slam.egg-info/dependency_links.txt
+[0.620s] writing entry points to astro_slam.egg-info/entry_points.txt
+[0.620s] writing requirements to astro_slam.egg-info/requires.txt
+[0.620s] writing top-level names to astro_slam.egg-info/top_level.txt
+[0.622s] reading manifest file 'astro_slam.egg-info/SOURCES.txt'
+[0.622s] writing manifest file 'astro_slam.egg-info/SOURCES.txt'
+[0.622s] running build_ext
+[0.622s] Creating /home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages/astro-slam.egg-link (link to .)
+[0.624s] 
+[0.624s] Installed /home/tona/astro_ws_pas/build/astro_slam
+[0.624s] running symlink_data
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/resource/astro_slam -> /home/tona/astro_ws_pas/install/astro_slam/share/ament_index/resource_index/packages
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/package.xml -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/launch/astro_stage_localization.launch.py -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/launch
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/launch/astro_stage_mapping.launch.py -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/launch
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/config/astro_stage_localization.yaml -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/config
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/config/astro_stage_mapper_online_async.yaml -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/config
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/config/rviz/astro_stage_mapping.rviz -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/config/rviz
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/config/rviz/astro_stage_localization.rviz -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/config/rviz
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/maps/crta_test_map.yaml -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/maps
+[0.624s] symbolically linking /home/tona/astro_ws_pas/build/astro_slam/maps/crta_test_map.pgm -> /home/tona/astro_ws_pas/install/astro_slam/share/astro_slam/maps
+[0.635s] Invoked command in '/home/tona/astro_ws_pas/build/astro_slam' returned '0': PYTHONPATH=/home/tona/astro_ws_pas/build/astro_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tona/astro_ws_pas/build/astro_slam/build --no-deps symlink_data --force

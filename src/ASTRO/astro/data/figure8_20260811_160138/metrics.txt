@@ -1,0 +1,24 @@
+ASTRO FIGURE-8 PATH ANALYSIS
+========================================
+Status: COMPLETED
+Date: 2026-08-11T16:03:19.367450
+
+START POSE
+----------------------------------------
+x: -0.191820 m
+y: -0.049102 m
+yaw: 0.135529 rad
+
+PATH METRICS
+----------------------------------------
+Duration: 100.184587 s
+Ideal path length: 7.733763 m
+Actual path length: 7.509233 m
+Mean path error: 0.016532 m
+RMSE path error: 0.020091 m
+Maximum path error: 0.035186 m
+Final position error: 0.009684 m
+Mean target error: 0.200316 m
+Maximum target error: 0.207489 m
+Actual samples: 2978
+Ideal samples: 1500

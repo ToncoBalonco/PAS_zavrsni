@@ -1,0 +1,10 @@
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/uninstall.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/astro_serial_cpp_uninstall.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/astro_serial_node.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/test.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/edit_cache.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/rebuild_cache.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/list_install_components.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/install.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/install/local.dir
+/home/tona/astro_ws_pas/build/astro_serial_cpp/CMakeFiles/install/strip.dir

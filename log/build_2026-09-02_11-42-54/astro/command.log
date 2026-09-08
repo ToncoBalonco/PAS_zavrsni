@@ -1,0 +1,4 @@
+Invoking command in '/home/tona/astro_ws_pas/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro -- -j24 -l24
+Invoked command in '/home/tona/astro_ws_pas/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro -- -j24 -l24
+Invoking command in '/home/tona/astro_ws_pas/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro
+Invoked command in '/home/tona/astro_ws_pas/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro

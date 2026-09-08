@@ -1,0 +1,32 @@
+[0.011s] Invoking command in '/home/tona/astro_ws_pas/build/astro_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro_navigation -- -j24 -l24
+[0.173s] Invoked command in '/home/tona/astro_ws_pas/build/astro_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro_navigation -- -j24 -l24
+[0.173s] Invoking command in '/home/tona/astro_ws_pas/build/astro_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro_navigation
+[0.181s] -- Install configuration: ""
+[0.181s] -- Execute custom install script
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/launch/astro_stage_navigation.launch.py
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/launch/localization.launch.py
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/launch/navigation.launch.py
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/launch/slam_toolbox_online_async.launch.py
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/config/astro_stage_navigation.yaml
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/config/mapper_params_online_async.yaml
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/config/nav2_params.yaml
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/rviz/astro_online_async_rviz_config.rviz
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/rviz/nav2_default_view.rviz
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/map/mapa_dva.pgm
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/map/mapa_dva.yaml
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/ament_index/resource_index/package_run_dependencies/astro_navigation
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/ament_index/resource_index/parent_prefix_path/astro_navigation
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/environment/ament_prefix_path.sh
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/environment/ament_prefix_path.dsv
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/environment/path.sh
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/environment/path.dsv
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/local_setup.bash
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/local_setup.sh
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/local_setup.zsh
+[0.181s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/local_setup.dsv
+[0.181s] -- Symlinking: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.dsv
+[0.184s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/ament_index/resource_index/packages/astro_navigation
+[0.184s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/cmake/astro_navigationConfig.cmake
+[0.184s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/cmake/astro_navigationConfig-version.cmake
+[0.184s] -- Up-to-date symlink: /home/tona/astro_ws_pas/install/astro_navigation/share/astro_navigation/package.xml
+[0.200s] Invoked command in '/home/tona/astro_ws_pas/build/astro_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro_navigation

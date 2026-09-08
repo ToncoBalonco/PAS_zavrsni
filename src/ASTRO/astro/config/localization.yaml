@@ -1,0 +1,68 @@
+slam_toolbox:
+  ros__parameters:
+
+    # -----------------------------------------------
+    # Vrsta SLAM-a
+    # localization = učitava gotovu mapu i lokalizira se
+    # NE kreira novu mapu, NE mijenja postojeću
+    # -----------------------------------------------
+    mode: localization
+
+    # -----------------------------------------------
+    # Topici i frameovi — mora biti isto kao pri mappingu!
+    # -----------------------------------------------
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint
+    scan_topic: /scan
+
+    # -----------------------------------------------
+    # PUTANJA DO SNIMLJENE MAPE
+    # Zadaj bez ekstenzije — slam_toolbox traži:
+    #   <map_file_name>.yaml  +  <map_file_name>.posegraph
+    # Oba fajla se generiraju pri snimanju mape.
+    # -----------------------------------------------
+    map_file_name: /home/tona/astro_ws_pas/src/ASTRO/astro_slam/maps/crta_test_map
+
+    # -----------------------------------------------
+    # Performanse — iste kao pri mappingu
+    # -----------------------------------------------
+    resolution: 0.05
+    max_laser_range: 6.0
+    transform_timeout: 0.5
+    tf_buffer_duration: 60.0
+    minimum_travel_distance: 0.15
+    minimum_travel_heading: 0.1
+
+    # -----------------------------------------------
+    # Scan matching
+    # -----------------------------------------------
+    use_scan_matching: true
+    use_scan_barycenter: true
+    minimum_time_interval: 0.1
+
+    # -----------------------------------------------
+    # Loop closure — isključena u localization modu
+    # -----------------------------------------------
+    loop_search_maximum_distance: 12.0
+    do_loop_closing: false      # Ne treba u lokalizaciji
+
+    # -----------------------------------------------
+    # Debug
+    # -----------------------------------------------
+    debug_logging: false
+    throttle_scans: 1
+    transform_publish_period: 0.02
+    map_update_interval: 0.1
+
+    # -----------------------------------------------
+    # Solver
+    # -----------------------------------------------
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: HuberLoss
+
+    sensor_data_qos: true

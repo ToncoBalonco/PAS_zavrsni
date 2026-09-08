@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+4e1b33c02ef592a94c585f68e2a7c89d CMakeFiles/astro_uninstall

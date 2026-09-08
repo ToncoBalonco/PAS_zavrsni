@@ -1,0 +1,20 @@
+[0.292s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/astro_slam': PYTHONPATH=/home/tona/astro_ws_pas/build/astro_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/astro_slam build --build-base /home/tona/astro_ws_pas/build/astro_slam/build install --record /home/tona/astro_ws_pas/build/astro_slam/install.log --install-scripts $base/lib/astro_slam --single-version-externally-managed install_data
+[0.389s] running egg_info
+[0.389s] writing ../../../build/astro_slam/astro_slam.egg-info/PKG-INFO
+[0.389s] writing dependency_links to ../../../build/astro_slam/astro_slam.egg-info/dependency_links.txt
+[0.389s] writing entry points to ../../../build/astro_slam/astro_slam.egg-info/entry_points.txt
+[0.389s] writing requirements to ../../../build/astro_slam/astro_slam.egg-info/requires.txt
+[0.389s] writing top-level names to ../../../build/astro_slam/astro_slam.egg-info/top_level.txt
+[0.390s] reading manifest file '../../../build/astro_slam/astro_slam.egg-info/SOURCES.txt'
+[0.391s] writing manifest file '../../../build/astro_slam/astro_slam.egg-info/SOURCES.txt'
+[0.391s] running build
+[0.391s] running build_py
+[0.391s] running install
+[0.391s] running install_lib
+[0.392s] running install_data
+[0.392s] running install_egg_info
+[0.393s] removing '/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages/astro_slam-0.0.0-py3.10.egg-info' (and everything under it)
+[0.393s] Copying ../../../build/astro_slam/astro_slam.egg-info to /home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages/astro_slam-0.0.0-py3.10.egg-info
+[0.393s] running install_scripts
+[0.402s] writing list of installed files to '/home/tona/astro_ws_pas/build/astro_slam/install.log'
+[0.413s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/astro_slam' returned '0': PYTHONPATH=/home/tona/astro_ws_pas/build/astro_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tona/astro_ws_pas/install/astro_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/astro_slam build --build-base /home/tona/astro_ws_pas/build/astro_slam/build install --record /home/tona/astro_ws_pas/build/astro_slam/install.log --install-scripts $base/lib/astro_slam --single-version-externally-managed install_data

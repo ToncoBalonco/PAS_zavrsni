@@ -1,0 +1,16 @@
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/lib/astro_serial_cpp/astro_serial_node
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/ament_index/resource_index/package_run_dependencies/astro_serial_cpp
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/ament_index/resource_index/parent_prefix_path/astro_serial_cpp
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/ament_prefix_path.sh
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/ament_prefix_path.dsv
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/path.sh
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/path.dsv
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.bash
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.sh
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.zsh
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.dsv
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/package.dsv
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/ament_index/resource_index/packages/astro_serial_cpp
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/cmake/astro_serial_cppConfig.cmake
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/cmake/astro_serial_cppConfig-version.cmake
+/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/package.xml

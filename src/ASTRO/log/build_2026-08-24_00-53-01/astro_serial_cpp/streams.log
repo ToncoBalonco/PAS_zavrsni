@@ -1,0 +1,77 @@
+[0.010s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro_serial_cpp -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.078s] -- The CXX compiler identification is GNU 11.4.0
+[0.085s] -- Detecting C compiler ABI info
+[0.128s] -- Detecting C compiler ABI info - done
+[0.132s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.132s] -- Detecting C compile features
+[0.133s] -- Detecting C compile features - done
+[0.135s] -- Detecting CXX compiler ABI info
+[0.187s] -- Detecting CXX compiler ABI info - done
+[0.192s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.192s] -- Detecting CXX compile features
+[0.192s] -- Detecting CXX compile features - done
+[0.194s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.292s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.353s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.381s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.384s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.389s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.397s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.435s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.436s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.489s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.509s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.536s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.541s] -- Looking for pthread.h
+[0.579s] -- Looking for pthread.h - found
+[0.579s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.617s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.617s] -- Found Threads: TRUE  
+[0.644s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.657s] -- Found std_srvs: 4.9.2 (/opt/ros/humble/share/std_srvs/cmake)
+[0.664s] -- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.668s] -- Found tf2: 0.25.22 (/opt/ros/humble/share/tf2/cmake)
+[0.673s] -- Found tf2_ros: 0.25.22 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.712s] -- Found tf2_geometry_msgs: 0.25.22 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.718s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.719s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.719s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.723s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.762s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.762s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/tona/astro_ws_pas/src/ASTRO/astro_serial_cpp/include>
+[0.762s] -- Configured cppcheck exclude dirs and/or files: 
+[0.762s] -- Added test 'lint_cmake' to check CMake code style
+[0.763s] -- Added test 'uncrustify' to check C / C++ code style
+[0.763s] -- Configured uncrustify additional arguments: 
+[0.763s] -- Added test 'xmllint' to check XML markup files
+[0.763s] -- Configuring done
+[0.769s] -- Generating done
+[0.770s] -- Build files have been written to: /home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp
+[0.777s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro_serial_cpp -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp
+[0.777s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp -- -j24 -l24
+[0.802s] [ 50%] [32mBuilding CXX object CMakeFiles/astro_serial_node.dir/src/astro_serial.cpp.o[0m
+[5.215s] [100%] [32m[1mLinking CXX executable astro_serial_node[0m
+[5.479s] [100%] Built target astro_serial_node
+[5.486s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp -- -j24 -l24
+[5.487s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp
+[5.490s] -- Install configuration: ""
+[5.490s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/lib/astro_serial_cpp/astro_serial_node
+[5.495s] -- Set runtime path of "/home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/lib/astro_serial_cpp/astro_serial_node" to ""
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/ament_index/resource_index/package_run_dependencies/astro_serial_cpp
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/ament_index/resource_index/parent_prefix_path/astro_serial_cpp
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/ament_prefix_path.sh
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/ament_prefix_path.dsv
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/path.sh
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/environment/path.dsv
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.bash
+[5.495s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.sh
+[5.496s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.zsh
+[5.496s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/local_setup.dsv
+[5.496s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/package.dsv
+[5.496s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/ament_index/resource_index/packages/astro_serial_cpp
+[5.496s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/cmake/astro_serial_cppConfig.cmake
+[5.496s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/cmake/astro_serial_cppConfig-version.cmake
+[5.496s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro_serial_cpp/share/astro_serial_cpp/package.xml
+[5.498s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/src/ASTRO/build/astro_serial_cpp

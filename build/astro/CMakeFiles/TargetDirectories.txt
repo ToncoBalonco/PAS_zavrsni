@@ -1,0 +1,9 @@
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/uninstall.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/astro_uninstall.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/test.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/edit_cache.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/rebuild_cache.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/list_install_components.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/install.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/install/local.dir
+/home/tona/astro_ws_pas/build/astro/CMakeFiles/install/strip.dir

@@ -1,0 +1,4 @@
+source;share/astro/local_setup.bash
+source;share/astro/local_setup.dsv
+source;share/astro/local_setup.sh
+source;share/astro/local_setup.zsh

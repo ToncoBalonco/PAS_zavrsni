@@ -1,0 +1,111 @@
+[0.010s] Invoking command in '/home/tona/astro_ws_pas/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/install/astro
+[0.046s] -- The C compiler identification is GNU 11.4.0
+[0.082s] -- The CXX compiler identification is GNU 11.4.0
+[0.089s] -- Detecting C compiler ABI info
+[0.141s] -- Detecting C compiler ABI info - done
+[0.145s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.145s] -- Detecting C compile features
+[0.146s] -- Detecting C compile features - done
+[0.147s] -- Detecting CXX compiler ABI info
+[0.198s] -- Detecting CXX compiler ABI info - done
+[0.202s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.202s] -- Detecting CXX compile features
+[0.203s] -- Detecting CXX compile features - done
+[0.204s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.306s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.347s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.360s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.411s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.412s] -- Added test 'lint_cmake' to check CMake code style
+[0.413s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.416s] -- Added test 'xmllint' to check XML markup files
+[0.417s] -- Configuring done
+[0.418s] -- Generating done
+[0.419s] -- Build files have been written to: /home/tona/astro_ws_pas/build/astro
+[0.423s] Invoked command in '/home/tona/astro_ws_pas/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/install/astro
+[0.423s] Invoking command in '/home/tona/astro_ws_pas/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro -- -j24 -l24
+[0.446s] Invoked command in '/home/tona/astro_ws_pas/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/build/astro -- -j24 -l24
+[0.451s] Invoking command in '/home/tona/astro_ws_pas/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro
+[0.456s] -- Install configuration: ""
+[0.456s] -- Execute custom install script
+[0.456s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/config/astro_sim_config.rviz
+[0.461s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/config/diff_drive_controller.yaml
+[0.466s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/config/ekf.yaml
+[0.471s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/config/twist_mux.yaml
+[0.476s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/astro.urdf.xacro
+[0.482s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/caster_wheels.xacro
+[0.487s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/imu.xacro
+[0.491s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/inertial_macros.xacro
+[0.499s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/lidar.xacro
+[0.501s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/materials.xacro
+[0.506s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/realsense.xacro
+[0.511s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/robot_core.xacro
+[0.516s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/ros2_control.xacro
+[0.521s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/description/sim_camera.xacro
+[0.526s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/bag_simulacija.launch.py
+[0.526s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:67 (file):
+[0.526s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[0.526s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[0.526s]   Use the cmake_policy command to set the policy and suppress this warning.
+[0.526s] Call Stack (most recent call first):
+[0.526s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:319 (ament_cmake_symlink_install_directory)
+[0.526s]   cmake_install.cmake:46 (include)
+[0.526s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.526s] [0m
+[0.531s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/build/.built_by
+[0.535s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/build/COLCON_IGNORE
+[0.541s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/.colcon_install_layout
+[0.545s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/COLCON_IGNORE
+[0.550s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/_local_setup_util_ps1.py
+[0.555s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/_local_setup_util_sh.py
+[0.561s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/local_setup.bash
+[0.566s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/local_setup.ps1
+[0.570s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/local_setup.sh
+[0.575s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/local_setup.zsh
+[0.580s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/setup.bash
+[0.585s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/setup.ps1
+[0.590s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/setup.sh
+[0.595s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/install/setup.zsh
+[0.600s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/log/COLCON_IGNORE
+[0.604s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/log/build_2026-07-29_00-04-31/events.log
+[0.611s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/log/build_2026-07-29_00-04-31/logger_all.log
+[0.615s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/log/latest/events.log
+[0.620s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/log/latest/logger_all.log
+[0.625s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/log/latest_build/events.log
+[0.629s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/log/latest_build/logger_all.log
+[0.635s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/optimizer_sim.launch.py
+[0.640s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/real_figure8.launch.py
+[0.645s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/rsp.launch.py
+[0.650s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/sim_figure8.launch.py
+[0.654s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/launch/sim_gazebo.launch.py
+[0.660s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/meshes/ASTRO_Chassis.stl
+[0.665s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/meshes/ASTRO_LidarAssembly.stl
+[0.670s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/meshes/RealSense.dae
+[0.674s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/rviz/view_robot.rviz
+[0.679s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/figure8_path_publisher.py
+[0.683s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/figure8_path_follower.py
+[0.688s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/astro_real_figure8_follower.py
+[0.693s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/astro_real_path_publisher.py
+[0.698s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/astar_planner.py
+[0.703s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/astar_full_planer.py
+[0.707s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/putanja_bag.py
+[0.712s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/optimizer.py
+[0.717s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/sim_epoch_runner.py
+[0.722s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/rosbag_cmdvel_replayer.py
+[0.726s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/lib/astro/bag_visualizer.py
+[0.731s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/ament_index/resource_index/package_run_dependencies/astro
+[0.739s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/ament_index/resource_index/parent_prefix_path/astro
+[0.745s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/environment/ament_prefix_path.sh
+[0.752s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/environment/ament_prefix_path.dsv
+[0.755s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/environment/path.sh
+[0.759s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/environment/path.dsv
+[0.763s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/local_setup.bash
+[0.768s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/local_setup.sh
+[0.772s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/local_setup.zsh
+[0.777s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/local_setup.dsv
+[0.781s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/package.dsv
+[0.786s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/ament_index/resource_index/packages/astro
+[0.791s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/cmake/astroConfig.cmake
+[0.795s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/cmake/astroConfig-version.cmake
+[0.800s] -- Symlinking: /home/tona/astro_ws_pas/install/astro/share/astro/package.xml
+[0.808s] Invoked command in '/home/tona/astro_ws_pas/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/build/astro

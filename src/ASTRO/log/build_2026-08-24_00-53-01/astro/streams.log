@@ -1,0 +1,107 @@
+[0.010s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/src/ASTRO/install/astro
+[0.046s] -- The C compiler identification is GNU 11.4.0
+[0.080s] -- The CXX compiler identification is GNU 11.4.0
+[0.085s] -- Detecting C compiler ABI info
+[0.129s] -- Detecting C compiler ABI info - done
+[0.134s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.135s] -- Detecting C compile features
+[0.135s] -- Detecting C compile features - done
+[0.137s] -- Detecting CXX compiler ABI info
+[0.188s] -- Detecting CXX compiler ABI info - done
+[0.193s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.193s] -- Detecting CXX compile features
+[0.193s] -- Detecting CXX compile features - done
+[0.197s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.295s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.352s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.403s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.404s] -- Added test 'lint_cmake' to check CMake code style
+[0.405s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.408s] -- Added test 'xmllint' to check XML markup files
+[0.409s] -- Configuring done
+[0.410s] -- Generating done
+[0.411s] -- Build files have been written to: /home/tona/astro_ws_pas/src/ASTRO/build/astro
+[0.415s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake /home/tona/astro_ws_pas/src/ASTRO/astro -DCMAKE_INSTALL_PREFIX=/home/tona/astro_ws_pas/src/ASTRO/install/astro
+[0.416s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/src/ASTRO/build/astro -- -j24 -l24
+[0.441s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --build /home/tona/astro_ws_pas/src/ASTRO/build/astro -- -j24 -l24
+[0.447s] Invoking command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/src/ASTRO/build/astro
+[0.452s] -- Install configuration: ""
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/config
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/config/ekf.yaml
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/config/diff_drive_controller.yaml
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/config/astro_sim_config.rviz
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/config/twist_mux.yaml
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/caster_wheels.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/materials.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/astro.urdf.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/realsense.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/robot_core.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/ros2_control.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/lidar.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/imu.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/sim_camera.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/description/inertial_macros.xacro
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/rsp.launch.py
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/build
+[0.452s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/build/.built_by
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/build/COLCON_IGNORE
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/optimizer_sim.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/bag_simulacija.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/real_figure8.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/sim_gazebo.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/sim_figure8.launch.py
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/log
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/log/latest
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/log/COLCON_IGNORE
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/log/build_2026-07-29_00-04-31
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/log/build_2026-07-29_00-04-31/logger_all.log
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/log/build_2026-07-29_00-04-31/events.log
+[0.453s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/log/latest_build
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/setup.zsh
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/COLCON_IGNORE
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/setup.sh
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/_local_setup_util_ps1.py
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/local_setup.bash
+[0.454s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/setup.bash
+[0.455s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/local_setup.sh
+[0.455s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/local_setup.zsh
+[0.455s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/_local_setup_util_sh.py
+[0.455s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/local_setup.ps1
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/setup.ps1
+[0.456s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/launch/install/.colcon_install_layout
+[0.459s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/meshes
+[0.459s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/meshes/RealSense.dae
+[0.467s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/meshes/ASTRO_LidarAssembly.stl
+[0.477s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/meshes/ASTRO_Chassis.stl
+[0.479s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/rviz
+[0.479s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/rviz/view_robot.rviz
+[0.479s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/figure8_path_publisher.py
+[0.479s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/figure8_path_follower.py
+[0.479s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/astro_real_figure8_follower.py
+[0.479s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/astro_real_path_publisher.py
+[0.479s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/astar_planner.py
+[0.480s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/astar_full_planer.py
+[0.480s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/putanja_bag.py
+[0.480s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/optimizer.py
+[0.480s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/sim_epoch_runner.py
+[0.480s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/rosbag_cmdvel_replayer.py
+[0.480s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/lib/astro/bag_visualizer.py
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/ament_index/resource_index/package_run_dependencies/astro
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/ament_index/resource_index/parent_prefix_path/astro
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/environment/ament_prefix_path.sh
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/environment/ament_prefix_path.dsv
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/environment/path.sh
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/environment/path.dsv
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/local_setup.bash
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/local_setup.sh
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/local_setup.zsh
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/local_setup.dsv
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/package.dsv
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/ament_index/resource_index/packages/astro
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/cmake/astroConfig.cmake
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/cmake/astroConfig-version.cmake
+[0.481s] -- Installing: /home/tona/astro_ws_pas/src/ASTRO/install/astro/share/astro/package.xml
+[0.482s] Invoked command in '/home/tona/astro_ws_pas/src/ASTRO/build/astro' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tona/astro_ws_pas/install/astro_slam:/opt/ros/humble /usr/bin/cmake --install /home/tona/astro_ws_pas/src/ASTRO/build/astro
