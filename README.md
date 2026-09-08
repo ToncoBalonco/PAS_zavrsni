@@ -1,11 +1,7 @@
 ﻿# ASTRO – pokretanje simulacije i A* + Potential Field Pure Pursuit navigacije
 
-Ovaj README pokriva samo ono što ti treba da **podigneš Gazebo simulaciju** i pokreneš
-**`astar_pf_pp.launch.py`** (A* globalni planer + Potential Field Pure Pursuit lokalni
-kontroler). Ostatak seminarskog paketa (stari `cmd_safety`/`dynamic_ob_layer` pristup, bag
-replay, optimizacija itd.) ovdje nije obrađen.
 
-## 1. Preduvjeti
+## Preduvjeti
 
 - ROS2 Humble
 - Gazebo (GZ Fortress, LTS) + `ros_gz_sim`, `ros_gz_bridge`
@@ -13,7 +9,7 @@ replay, optimizacija itd.) ovdje nije obrađen.
   `twist_mux`, `xacro`
 - Izgrađen i sourcean `astro` paket (`colcon build`, pa `source install/setup.bash`)
 
-## 2. Bitne stvari prije pokretanja (hardkodirani putevi!)
+## Bitne stvari prije pokretanja (hardkodirani putevi!)
 
 U oba launch fajla postoje **apsolutni putevi vezani za konkretnog korisnika/računalo** –
 provjeri ih i po potrebi promijeni prije pokretanja:
@@ -30,101 +26,9 @@ Također, karta (`mapa_crte_new.yaml`) mora već postojati – tj. laboratorij m
 mapiran (SLAM), jer `astar_pf_pp.launch.py` samo učitava gotovu kartu preko `map_server`-a, ne
 radi mapiranje.
 
-## 3. Korak 1 – pokretanje Gazebo simulacije
 
-```bash
-ros2 launch astro sim_gazebo.launch.py
-```
 
-Što ovaj launch radi (redom):
-
-1. Postavlja `GZ_SIM_RESOURCE_PATH` da Gazebo može pronaći `model://astro/...` resurse.
-2. Generira `robot_description` iz `astro.urdf.xacro` i pokreće `robot_state_publisher`
-   (`use_sim_time:=true`).
-3. Pali Gazebo (`gz_sim.launch.py`) sa svijetom `test_crta.world`.
-4. Pokreće bridge-eve Gazebo ↔ ROS2 za:
-   - `/scan` (LaserScan)
-   - `/camera/imu` (Imu)
-   - `/clock` (Clock – sim time)
-   - kameru: `color`, `depth`, `infra1` (image + camera_info)
-5. Nakon **10 sekundi odgode** (da se svijet i topici stignu podići):
-   - spawna robota (`astro`) u Gazebo,
-   - spawna `joint_state_broadcaster`,
-   - spawna `diff_drive_base_controller`.
-
-Robot se pojavljuje u svijetu tek nakon te 10s pauze – ako ništa ne vidiš odmah, to je
-očekivano, samo pričekaj.
-
-Provjeri da je sve gore (nakon ~10-ak sekundi):
-
-```bash
-ros2 topic list        # očekuješ /scan, /cmd_vel, /clock, /camera/... , /joint_states
-ros2 control list_controllers
-```
-
-## 4. Korak 2 – pokretanje A* + Potential Field Pure Pursuit navigacije
-
-U novom terminalu (nakon što je simulacija gore i robot spawnan):
-
-```bash
-ros2 launch astro astar_pf_pp.launch.py
-```
-
-⚠️ **Napomena:** ovaj launch fajl je po defaultu pisan za **pravi robot**
-(`use_sim_time: False` na svim node-ovima, uključujući `map_server`, `amcl` i `rviz2`). Za
-simulaciju ćeš vjerojatno htjeti da ovi node-ovi koriste sim vrijeme (jer Gazebo publica
-`/clock`), inače će ti TF/lokalizacija/AMCL vjerojatno "kasniti" ili se uopće ne poklapati s
-podacima iz simulacije. Najjednostavnije rješenje: u `astar_pf_pp.launch.py` promijeni sve
-`"use_sim_time": False` u `"use_sim_time": True` (map_server, lifecycle_manager, amcl, rviz),
-prije pokretanja u simulaciji.
-
-Pipeline koji se pokreće (redom, s odgodama preko `TimerAction`):
-
-| t (s) | Node | Svrha |
-|---|---|---|
-| 0 | `rsp.launch.py` | `robot_state_publisher` (ponovno; koristi se za TF robota) |
-| 2 | `map_server` | učitava statičku kartu (`mapa_crte_new.yaml`) na `/map` |
-| 4 | `lifecycle_manager_localization` | aktivira `map_server` i `amcl` (autostart) |
-| 7 | `amcl` | lokalizacija robota u karti (subskribira `/scan`) |
-| 10 | `astar_planner_pf.py` | globalni A* planer |
-| 11 | `pf_pure_pursuit.py` | lokalni kontroler (prati `/plan`, izbjegava prepreke iz `/scan`) |
-| 13 | `rviz2` | vizualizacija (config: `astar_planer_v1.rviz`) |
-
-Napomena: `rsp.launch.py` sam po sebi pokreće samo `robot_state_publisher` (i opcionalno RViz /
-joint_state_publisher_gui preko argumenata `run_rviz`, `run_jspg`) – `twist_mux` i EKF
-(`robot_localization`) node-ovi su u tom fajlu definirani, ali trenutno **isključeni** (nisu u
-`LaunchDescription` listi), pa se ne pokreću automatski.
-
-### Kako zadati cilj robotu
-
-1. Otvori se RViz (zadnji korak, nakon ~13s).
-2. Klikni **"2D Goal Pose"** u RViz toolbaru i klikni/povuci na karti gdje želiš da robot ide.
-   To publica na `/goal_pose`.
-3. `astar_planner_pf` na to:
-   - dohvati trenutnu poziciju robota preko TF-a (`map -> base_footprint`),
-   - izračuna A* put kroz naduvanu (inflatanu) kartu prema `robot_radius`,
-   - publica ga na `/plan`.
-4. `pf_pure_pursuit` prati `/plan` (pure pursuit, lookahead) i istovremeno odbija robota od
-   prepreka direktno iz `/scan` (potencijalna polja), publicajući `/cmd_vel`.
-5. Kad robot stigne blizu cilja (unutar `goal_tolerance`, nakon >90% puta), automatski stane i
-   čeka novi `/goal_pose`.
-
-### Bitni parametri (za fino podešavanje)
-
-**`astar_planner_pf.py`** (`astar_planner_pf` node):
-- `robot_radius` (0.27 m u launch fajlu) – koliko se prepreke na karti naduvavaju radi sigurnosti
-- `obstacle_threshold` (50) – prag iznad kojeg je ćelija prepreka
-
-**`pf_pure_pursuit.py`** (`potential_field_pure_pursuit` node):
-- `lookahead_distance` (0.45 m) – koliko daleko na putanji se traži target točka
-- `max_linear_velocity` / `min_linear_velocity` / `max_angular_velocity`
-- `influence_radius` / `repulsive_gain` / `attractive_gain` – potencijalna polja (odbijanje od
-  prepreka iz `/scan`)
-- `hard_stop_distance` / `hard_stop_front_angle_deg` – zadnja linija obrane (tvrdi stop) ako
-  se nešto pojavi prenaglo blizu ispred robota
-- `scan_angle_offset_deg` – podesi ako laser nije fizički poravnat s "naprijed" robota
-
-## 5. Tipičan tok rada (sažetak)
+## Tipičan tok rada (sažetak)
 
 ```bash
 # Terminal 1
@@ -136,16 +40,4 @@ ros2 launch astro astar_pf_pp.launch.py
 # u RViz-u: "2D Goal Pose" -> klik na karti -> robot planira i vozi do cilja
 ```
 
-## 6. Najčešći problemi
 
-- **Launch puca na "file not found" za world/kartu** → provjeri hardkodirane puteve u točki 2.
-- **Robot se ne pojavljuje u Gazebu** → normalno, čeka se 10s (`delayed_spawners`); provjeri i da
-  je `astro` paket built/sourced tako da Gazebo nađe `model://astro/...` (`GZ_SIM_RESOURCE_PATH`).
-- **AMCL/TF ne rade kako treba u simulaciji** → vrlo vjerojatno neusklađen `use_sim_time`
-  (Gazebo šalje `/clock`, a `astar_pf_pp.launch.py` po defaultu drži sve node-ove na
-  `use_sim_time: False`) – vidi napomenu u točki 4.
-- **A* javlja "Robot je izvan karte" / "unutar prepreke"** → robotova pozicija (iz TF-a
-  `map -> base_footprint`) ne poklapa se s kartom; provjeri je li AMCL uopće konvergirao
-  (postavi početnu pozu preko "2D Pose Estimate" u RViz-u ako treba).
-- **Nema `/plan` iako je goal poslan** → provjeri je li karta uopće primljena
-  (`map_ready` log u `astar_planner_pf`) i je li TF dostupan.
